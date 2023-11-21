@@ -22,6 +22,8 @@
 		D822BA352B0C733B00371FAC /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA342B0C733B00371FAC /* ListView.swift */; };
 		D822BA372B0C736B00371FAC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA362B0C736B00371FAC /* ListViewModel.swift */; };
 		D822BA392B0C809F00371FAC /* BannerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA382B0C809F00371FAC /* BannerTestView.swift */; };
+		D822BA3B2B0CB1AF00371FAC /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA3A2B0CB1AF00371FAC /* BannerView.swift */; };
+		D822BA3D2B0CB28600371FAC /* BannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA3C2B0CB28600371FAC /* BannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		D822BA342B0C733B00371FAC /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D822BA362B0C736B00371FAC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		D822BA382B0C809F00371FAC /* BannerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTestView.swift; sourceTree = "<group>"; };
+		D822BA3A2B0CB1AF00371FAC /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		D822BA3C2B0CB28600371FAC /* BannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				D822BA322B0C595900371FAC /* ContentViewModel.swift */,
 				D822BA342B0C733B00371FAC /* ListView.swift */,
 				D822BA362B0C736B00371FAC /* ListViewModel.swift */,
+				D822BA3A2B0CB1AF00371FAC /* BannerView.swift */,
+				D822BA3C2B0CB28600371FAC /* BannerViewModel.swift */,
 			);
 			path = SwiftUICoinOrderbook;
 			sourceTree = "<group>";
@@ -299,12 +305,14 @@
 			files = (
 				D822BA352B0C733B00371FAC /* ListView.swift in Sources */,
 				D822B9FF2B0AFFF600371FAC /* ContentView.swift in Sources */,
+				D822BA3D2B0CB28600371FAC /* BannerViewModel.swift in Sources */,
 				D822BA312B0C4EBC00371FAC /* UpbitAPI.swift in Sources */,
 				D822B9FD2B0AFFF600371FAC /* SwiftUICoinOrderbookApp.swift in Sources */,
 				D822BA332B0C595900371FAC /* ContentViewModel.swift in Sources */,
 				D822BA372B0C736B00371FAC /* ListViewModel.swift in Sources */,
 				D822BA2A2B0C439200371FAC /* Money.swift in Sources */,
 				D822BA282B0C438D00371FAC /* Banner.swift in Sources */,
+				D822BA3B2B0CB1AF00371FAC /* BannerView.swift in Sources */,
 				D822BA392B0C809F00371FAC /* BannerTestView.swift in Sources */,
 				D822BA2C2B0C4A2100371FAC /* OverlayView.swift in Sources */,
 			);
