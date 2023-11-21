@@ -14,6 +14,14 @@
 		D822BA0E2B0AFFF900371FAC /* SwiftUICoinOrderbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA0D2B0AFFF900371FAC /* SwiftUICoinOrderbookTests.swift */; };
 		D822BA182B0AFFF900371FAC /* SwiftUICoinOrderbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA172B0AFFF900371FAC /* SwiftUICoinOrderbookUITests.swift */; };
 		D822BA1A2B0AFFF900371FAC /* SwiftUICoinOrderbookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA192B0AFFF900371FAC /* SwiftUICoinOrderbookUITestsLaunchTests.swift */; };
+		D822BA282B0C438D00371FAC /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA272B0C438D00371FAC /* Banner.swift */; };
+		D822BA2A2B0C439200371FAC /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA292B0C439200371FAC /* Money.swift */; };
+		D822BA2C2B0C4A2100371FAC /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA2B2B0C4A2100371FAC /* OverlayView.swift */; };
+		D822BA312B0C4EBC00371FAC /* UpbitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA302B0C4EBC00371FAC /* UpbitAPI.swift */; };
+		D822BA332B0C595900371FAC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA322B0C595900371FAC /* ContentViewModel.swift */; };
+		D822BA352B0C733B00371FAC /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA342B0C733B00371FAC /* ListView.swift */; };
+		D822BA372B0C736B00371FAC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA362B0C736B00371FAC /* ListViewModel.swift */; };
+		D822BA392B0C809F00371FAC /* BannerTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D822BA382B0C809F00371FAC /* BannerTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		D822BA132B0AFFF900371FAC /* SwiftUICoinOrderbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICoinOrderbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D822BA172B0AFFF900371FAC /* SwiftUICoinOrderbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICoinOrderbookUITests.swift; sourceTree = "<group>"; };
 		D822BA192B0AFFF900371FAC /* SwiftUICoinOrderbookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICoinOrderbookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D822BA272B0C438D00371FAC /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		D822BA292B0C439200371FAC /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		D822BA2B2B0C4A2100371FAC /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		D822BA302B0C4EBC00371FAC /* UpbitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpbitAPI.swift; sourceTree = "<group>"; };
+		D822BA322B0C595900371FAC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		D822BA342B0C733B00371FAC /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D822BA362B0C736B00371FAC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		D822BA382B0C809F00371FAC /* BannerTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,17 @@
 		D822B9FB2B0AFFF600371FAC /* SwiftUICoinOrderbook */ = {
 			isa = PBXGroup;
 			children = (
+				D822BA2D2B0C4E7D00371FAC /* Network */,
+				D822BA262B0C438000371FAC /* Model */,
 				D822B9FC2B0AFFF600371FAC /* SwiftUICoinOrderbookApp.swift */,
 				D822B9FE2B0AFFF600371FAC /* ContentView.swift */,
+				D822BA382B0C809F00371FAC /* BannerTestView.swift */,
 				D822BA002B0AFFF800371FAC /* Assets.xcassets */,
 				D822BA022B0AFFF800371FAC /* Preview Content */,
+				D822BA2B2B0C4A2100371FAC /* OverlayView.swift */,
+				D822BA322B0C595900371FAC /* ContentViewModel.swift */,
+				D822BA342B0C733B00371FAC /* ListView.swift */,
+				D822BA362B0C736B00371FAC /* ListViewModel.swift */,
 			);
 			path = SwiftUICoinOrderbook;
 			sourceTree = "<group>";
@@ -125,6 +148,23 @@
 				D822BA192B0AFFF900371FAC /* SwiftUICoinOrderbookUITestsLaunchTests.swift */,
 			);
 			path = SwiftUICoinOrderbookUITests;
+			sourceTree = "<group>";
+		};
+		D822BA262B0C438000371FAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D822BA272B0C438D00371FAC /* Banner.swift */,
+				D822BA292B0C439200371FAC /* Money.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D822BA2D2B0C4E7D00371FAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D822BA302B0C4EBC00371FAC /* UpbitAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D822BA352B0C733B00371FAC /* ListView.swift in Sources */,
 				D822B9FF2B0AFFF600371FAC /* ContentView.swift in Sources */,
+				D822BA312B0C4EBC00371FAC /* UpbitAPI.swift in Sources */,
 				D822B9FD2B0AFFF600371FAC /* SwiftUICoinOrderbookApp.swift in Sources */,
+				D822BA332B0C595900371FAC /* ContentViewModel.swift in Sources */,
+				D822BA372B0C736B00371FAC /* ListViewModel.swift in Sources */,
+				D822BA2A2B0C439200371FAC /* Money.swift in Sources */,
+				D822BA282B0C438D00371FAC /* Banner.swift in Sources */,
+				D822BA392B0C809F00371FAC /* BannerTestView.swift in Sources */,
+				D822BA2C2B0C4A2100371FAC /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
