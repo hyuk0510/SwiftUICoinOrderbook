@@ -6,29 +6,32 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct HorizontalView: View {
     
-    @StateObject var viewModel = HorizontalViewModel()
+    @StateObject var viewModel = HorizontalViewModel(market:
+                                                        Market(market: "krw-btc", korean: "비트코인", english: "Bitcoin")
+    )
     
     var body: some View {
         ScrollView {
-            Text("\(viewModel.value)")
+            Text(viewModel.market.korean)
             GeometryReader { proxy in
                 
-                let graphWidte = proxy.size.width
+                let graphWidth = proxy.size.width * 0.7
                 
                 VStack {
-                    ForEach(horizontalDummy, id: \.id) { item in
+                    ForEach(viewModel.askOrderBook, id: \.id) { item in
                         HStack {
-                            Text(item.data)
+                            Text(item.price.formatted())
                                 .frame(width: proxy.size.width * 0.2)
                             ZStack(alignment: .leading) {
                                 Rectangle()
                                     .foregroundStyle(.blue.opacity(0.4))
-                                    .frame(width: CGFloat(item.point) / 10)
-                                    .frame(maxWidth: graphWidte * 0.7)
-                                Text(item.point.formatted())
+                                    .frame(maxWidth: graphWidth * 0.7)
+                                Text(item.size.formatted())
+                                    .frame(width: graphWidth)
                             }
                             .frame(maxWidth: .infinity)
                             .background(.gray)
@@ -37,12 +40,19 @@ struct HorizontalView: View {
                     }
                 }
                 .background(.green)
-                .onTapGesture {
-//                    viewModel.timer()
-                    print(proxy)
-                    print(proxy.size)
+                
             }
-            }
+        }
+        .onAppear {
+//            viewModel.timer()
+            //UserDefaults AppGroup
+            print(UserDefaults.groupShared.string(forKey: "Market"))
+            
+            UserDefaults.groupShared.set(viewModel.market.korean, forKey: "Market")
+            
+            print(UserDefaults.groupShared.string(forKey: "Market"))
+            
+            WidgetCenter.shared.reloadTimelines(ofKind: "SunOrderbook")
         }
         
     }

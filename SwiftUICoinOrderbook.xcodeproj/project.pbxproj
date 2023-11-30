@@ -39,6 +39,19 @@
 		D82E59892B16D2210042294C /* SunOrderbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59882B16D2210042294C /* SunOrderbook.swift */; };
 		D82E598B2B16D2230042294C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82E598A2B16D2230042294C /* Assets.xcassets */; };
 		D82E598F2B16D2230042294C /* SunOrderbookExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D82E597F2B16D2210042294C /* SunOrderbookExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D82E59992B1819A50042294C /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59972B1819770042294C /* Provider.swift */; };
+		D82E599C2B181A480042294C /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E599B2B181A480042294C /* SimpleEntry.swift */; };
+		D82E599E2B181A840042294C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E599D2B181A840042294C /* EntryView.swift */; };
+		D82E59A22B18204F0042294C /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59A12B18204F0042294C /* UserDefaultsGroup.swift */; };
+		D82E59A32B18204F0042294C /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59A12B18204F0042294C /* UserDefaultsGroup.swift */; };
+		D82E59A92B18300D0042294C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E59812B16D2210042294C /* WidgetKit.framework */; };
+		D82E59AA2B18300D0042294C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E59832B16D2210042294C /* SwiftUI.framework */; };
+		D82E59AD2B18300D0042294C /* SunWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59AC2B18300D0042294C /* SunWidgetBundle.swift */; };
+		D82E59AF2B18300D0042294C /* SunWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59AE2B18300D0042294C /* SunWidget.swift */; };
+		D82E59B12B18300F0042294C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82E59B02B18300F0042294C /* Assets.xcassets */; };
+		D82E59B52B18300F0042294C /* SunWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D82E59A82B18300D0042294C /* SunWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D82E59BA2B18322B0042294C /* WidgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59B92B18322B0042294C /* WidgetTabView.swift */; };
+		D82E59BB2B18322B0042294C /* WidgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82E59B92B18322B0042294C /* WidgetTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +76,13 @@
 			remoteGlobalIDString = D82E597E2B16D2210042294C;
 			remoteInfo = SunOrderbookExtension;
 		};
+		D82E59B32B18300F0042294C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D822B9F12B0AFFF600371FAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82E59A72B18300D0042294C;
+			remoteInfo = SunWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +93,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				D82E598F2B16D2230042294C /* SunOrderbookExtension.appex in Embed Foundation Extensions */,
+				D82E59B52B18300F0042294C /* SunWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +137,18 @@
 		D82E59882B16D2210042294C /* SunOrderbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunOrderbook.swift; sourceTree = "<group>"; };
 		D82E598A2B16D2230042294C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82E598C2B16D2230042294C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82E59972B1819770042294C /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		D82E599B2B181A480042294C /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		D82E599D2B181A840042294C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		D82E599F2B181EB50042294C /* SwiftUICoinOrderbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUICoinOrderbook.entitlements; sourceTree = "<group>"; };
+		D82E59A02B181FC10042294C /* SunOrderbookExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SunOrderbookExtension.entitlements; sourceTree = "<group>"; };
+		D82E59A12B18204F0042294C /* UserDefaultsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGroup.swift; sourceTree = "<group>"; };
+		D82E59A82B18300D0042294C /* SunWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SunWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82E59AC2B18300D0042294C /* SunWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunWidgetBundle.swift; sourceTree = "<group>"; };
+		D82E59AE2B18300D0042294C /* SunWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunWidget.swift; sourceTree = "<group>"; };
+		D82E59B02B18300F0042294C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D82E59B22B18300F0042294C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82E59B92B18322B0042294C /* WidgetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,16 +182,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D82E59A52B18300D0042294C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82E59AA2B18300D0042294C /* SwiftUI.framework in Frameworks */,
+				D82E59A92B18300D0042294C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D822B9F02B0AFFF600371FAC = {
 			isa = PBXGroup;
 			children = (
+				D82E59A02B181FC10042294C /* SunOrderbookExtension.entitlements */,
 				D822B9FB2B0AFFF600371FAC /* SwiftUICoinOrderbook */,
 				D822BA0C2B0AFFF900371FAC /* SwiftUICoinOrderbookTests */,
 				D822BA162B0AFFF900371FAC /* SwiftUICoinOrderbookUITests */,
 				D82E59852B16D2210042294C /* SunOrderbook */,
+				D82E59AB2B18300D0042294C /* SunWidget */,
 				D82E59802B16D2210042294C /* Frameworks */,
 				D822B9FA2B0AFFF600371FAC /* Products */,
 			);
@@ -171,6 +215,7 @@
 				D822BA092B0AFFF900371FAC /* SwiftUICoinOrderbookTests.xctest */,
 				D822BA132B0AFFF900371FAC /* SwiftUICoinOrderbookUITests.xctest */,
 				D82E597F2B16D2210042294C /* SunOrderbookExtension.appex */,
+				D82E59A82B18300D0042294C /* SunWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +223,7 @@
 		D822B9FB2B0AFFF600371FAC /* SwiftUICoinOrderbook */ = {
 			isa = PBXGroup;
 			children = (
+				D82E599F2B181EB50042294C /* SwiftUICoinOrderbook.entitlements */,
 				D82E59722B14322B0042294C /* Horizontal */,
 				D82E596B2B141D5F0042294C /* WithUIKit */,
 				D822BA3E2B0D85C100371FAC /* Animation */,
@@ -194,6 +240,8 @@
 				D822BA362B0C736B00371FAC /* ListViewModel.swift */,
 				D822BA3A2B0CB1AF00371FAC /* BannerView.swift */,
 				D822BA3C2B0CB28600371FAC /* BannerViewModel.swift */,
+				D82E59A12B18204F0042294C /* UserDefaultsGroup.swift */,
+				D82E59B92B18322B0042294C /* WidgetTabView.swift */,
 			);
 			path = SwiftUICoinOrderbook;
 			sourceTree = "<group>";
@@ -282,12 +330,42 @@
 		D82E59852B16D2210042294C /* SunOrderbook */ = {
 			isa = PBXGroup;
 			children = (
+				D82E599A2B181A190042294C /* Entry */,
+				D82E59942B1819110042294C /* Provider */,
 				D82E59862B16D2210042294C /* SunOrderbookBundle.swift */,
 				D82E59882B16D2210042294C /* SunOrderbook.swift */,
 				D82E598A2B16D2230042294C /* Assets.xcassets */,
 				D82E598C2B16D2230042294C /* Info.plist */,
 			);
 			path = SunOrderbook;
+			sourceTree = "<group>";
+		};
+		D82E59942B1819110042294C /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				D82E59972B1819770042294C /* Provider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		D82E599A2B181A190042294C /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				D82E599B2B181A480042294C /* SimpleEntry.swift */,
+				D82E599D2B181A840042294C /* EntryView.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		D82E59AB2B18300D0042294C /* SunWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D82E59AC2B18300D0042294C /* SunWidgetBundle.swift */,
+				D82E59AE2B18300D0042294C /* SunWidget.swift */,
+				D82E59B02B18300F0042294C /* Assets.xcassets */,
+				D82E59B22B18300F0042294C /* Info.plist */,
+			);
+			path = SunWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +384,7 @@
 			);
 			dependencies = (
 				D82E598E2B16D2230042294C /* PBXTargetDependency */,
+				D82E59B42B18300F0042294C /* PBXTargetDependency */,
 			);
 			name = SwiftUICoinOrderbook;
 			productName = SwiftUICoinOrderbook;
@@ -365,6 +444,23 @@
 			productReference = D82E597F2B16D2210042294C /* SunOrderbookExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		D82E59A72B18300D0042294C /* SunWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82E59B62B18300F0042294C /* Build configuration list for PBXNativeTarget "SunWidgetExtension" */;
+			buildPhases = (
+				D82E59A42B18300D0042294C /* Sources */,
+				D82E59A52B18300D0042294C /* Frameworks */,
+				D82E59A62B18300D0042294C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SunWidgetExtension;
+			productName = SunWidgetExtension;
+			productReference = D82E59A82B18300D0042294C /* SunWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -389,6 +485,9 @@
 					D82E597E2B16D2210042294C = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
+					D82E59A72B18300D0042294C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = D822B9F42B0AFFF600371FAC /* Build configuration list for PBXProject "SwiftUICoinOrderbook" */;
@@ -408,6 +507,7 @@
 				D822BA082B0AFFF900371FAC /* SwiftUICoinOrderbookTests */,
 				D822BA122B0AFFF900371FAC /* SwiftUICoinOrderbookUITests */,
 				D82E597E2B16D2210042294C /* SunOrderbookExtension */,
+				D82E59A72B18300D0042294C /* SunWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -444,6 +544,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D82E59A62B18300D0042294C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82E59B12B18300F0042294C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -461,12 +569,14 @@
 				D822BA3D2B0CB28600371FAC /* BannerViewModel.swift in Sources */,
 				D822BA312B0C4EBC00371FAC /* UpbitAPI.swift in Sources */,
 				D822B9FD2B0AFFF600371FAC /* SwiftUICoinOrderbookApp.swift in Sources */,
+				D82E59A22B18204F0042294C /* UserDefaultsGroup.swift in Sources */,
 				D822BA332B0C595900371FAC /* ContentViewModel.swift in Sources */,
 				D82E59762B1432680042294C /* HorizontalView.swift in Sources */,
 				D82E596F2B141E630042294C /* MyWebView.swift in Sources */,
 				D822BA372B0C736B00371FAC /* ListViewModel.swift in Sources */,
 				D822BA2A2B0C439200371FAC /* Money.swift in Sources */,
 				D822BA442B0DA52900371FAC /* WalletModel.swift in Sources */,
+				D82E59BA2B18322B0042294C /* WidgetTabView.swift in Sources */,
 				D82E59782B1435710042294C /* HorizontalData.swift in Sources */,
 				D822BA282B0C438D00371FAC /* Banner.swift in Sources */,
 				D822BA3B2B0CB1AF00371FAC /* BannerView.swift in Sources */,
@@ -496,8 +606,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82E599C2B181A480042294C /* SimpleEntry.swift in Sources */,
 				D82E59892B16D2210042294C /* SunOrderbook.swift in Sources */,
+				D82E599E2B181A840042294C /* EntryView.swift in Sources */,
+				D82E59BB2B18322B0042294C /* WidgetTabView.swift in Sources */,
+				D82E59992B1819A50042294C /* Provider.swift in Sources */,
+				D82E59A32B18204F0042294C /* UserDefaultsGroup.swift in Sources */,
 				D82E59872B16D2210042294C /* SunOrderbookBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82E59A42B18300D0042294C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82E59AF2B18300D0042294C /* SunWidget.swift in Sources */,
+				D82E59AD2B18300D0042294C /* SunWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +642,11 @@
 			isa = PBXTargetDependency;
 			target = D82E597E2B16D2210042294C /* SunOrderbookExtension */;
 			targetProxy = D82E598D2B16D2230042294C /* PBXContainerItemProxy */;
+		};
+		D82E59B42B18300F0042294C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82E59A72B18300D0042294C /* SunWidgetExtension */;
+			targetProxy = D82E59B32B18300F0042294C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -647,6 +776,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUICoinOrderbook/SwiftUICoinOrderbook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICoinOrderbook/Preview Content\"";
@@ -677,6 +807,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUICoinOrderbook/SwiftUICoinOrderbook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICoinOrderbook/Preview Content\"";
@@ -782,6 +913,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SunOrderbookExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AM9D6522QR;
@@ -809,6 +941,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SunOrderbookExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AM9D6522QR;
@@ -823,6 +956,60 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sun.SwiftUICoinOrderbook.SunOrderbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D82E59B72B18300F0042294C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM9D6522QR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SunWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SunWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sun.SwiftUICoinOrderbook.SunWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D82E59B82B18300F0042294C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM9D6522QR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SunWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SunWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sun.SwiftUICoinOrderbook.SunWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -875,6 +1062,15 @@
 			buildConfigurations = (
 				D82E59912B16D2240042294C /* Debug */,
 				D82E59922B16D2240042294C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D82E59B62B18300F0042294C /* Build configuration list for PBXNativeTarget "SunWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82E59B72B18300F0042294C /* Debug */,
+				D82E59B82B18300F0042294C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
